@@ -4,6 +4,7 @@
 
 ## Related Projects
 
+  - https://github.com/HRR42-FEC-4/stacy-proxy
   - https://github.com/HRR42-FEC-4/dave-proxy
   - https://github.com/HRR42-FEC-4/dave-service
   - https://github.com/HRR42-FEC-4/katie-proxy
