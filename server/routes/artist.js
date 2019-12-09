@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
   try {
     let result;
     if (name) {
-      result = await Artist.findOne({ where: { firstName: name }, include: [{ model: Artwork }] });
+      result = await Artist.findOne({ where: { lastName: name }, include: [{ model: Artwork }] });
     }
     if (!result) {
       result = await Artist.findAll();
