@@ -1,21 +1,16 @@
 const router = require('express').Router();
-// const router = express.Router();
 const { Artwork } = require('../models');
 
-
 router.post('/', async (req, res) => {
-  console.log('Req body:', req.body)
-
   try {
     const createdArtwork = await Artwork.create(req.body)
     res.send(createdArtwork)
   } catch (err) {
-    // console.log('Error: ', err);
+    console.log('Error: ', err);
     res.send(err);
   }
 
 });
-
 
 router.get('/:artworkId', async (req, res) => {
   try {
@@ -31,7 +26,6 @@ router.get('/:artworkId', async (req, res) => {
   }
 });
 
-
 router.put('/:artworkId', async (req, res) => {
   try {
     await Artwork.update(req.body, { where: { id: req.params.artworkId } });
@@ -41,7 +35,6 @@ router.put('/:artworkId', async (req, res) => {
     res.send(err);
   }
 });
-
 
 router.delete('/:artworkId', async (req, res) => {
   try {

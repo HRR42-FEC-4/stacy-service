@@ -4,7 +4,6 @@ const axios = require('axios');
 const { Artist, Artwork, db } = require('./models');
 const _ = require('lodash');
 
-// Create an S3 client
 const s3 = new AWS.S3();
 
 const NUMBER_OF_RECORDS = 100;
@@ -19,7 +18,6 @@ db.authenticate()
     const emptyS3Directory = async (bucket) => {
       const listParams = {
         Bucket: bucket,
-        //Prefix: dir
       };
       const listedObjects = await s3.listObjectsV2(listParams).promise();
       if (listedObjects.Contents.length === 0) return;

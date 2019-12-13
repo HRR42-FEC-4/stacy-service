@@ -7,10 +7,7 @@ const Artwork = db.define('artwork', {
   },
   imgUrl: {
     type: Sequelize.STRING,
-    allowNull: false,
-    // validate: {
-    //   notEmpty: true
-    // }
+    allowNull: false
   }
 });
 

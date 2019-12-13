@@ -1,7 +1,7 @@
 {
   "name": "stacy-service",
   "version": "",
-  "description": "Hack Reactor Front End Capstone Project | H-Art (art.com)",
+  "description": "Hack Reactor | Front End Capstone Project | Art.com",
   "main": "index.js",
   "author": "Stacy Kim",
   "license": "UNLICENSED",
@@ -12,7 +12,7 @@
     "start": "nodemon server",
     "build": "webpack -d --watch",
     "seed": "node server/seed.js",
-    "test": "jest"
+    "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
     "aws-sdk": "^2.585.0",
@@ -30,15 +30,16 @@
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
     "nodemon": "^2.0.1",
+    "supertest": "^4.0.2",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
   }

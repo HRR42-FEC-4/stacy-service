@@ -1,16 +1,13 @@
 const router = require('express').Router();
-// const router = express.Router();
 const { Artist, Artwork } = require('../models');
 
 
 router.post('/', async (req, res) => {
-  console.log('REQ body: ', req.body)
-
   try {
     const createdArticle = await Artist.create(req.body)
     res.send(createdArticle)
   } catch (err) {
-    // console.log('Error: ', err);
+    console.log('Error: ', err);
     res.send(err);
   }
 });
@@ -35,7 +32,6 @@ router.get('/', async (req, res) => {
 
 
 router.get('/:artistId', async (req, res) => {
-  console.log('REQ body in single GET', req.body)
   try {
     const foundArtist = await Artist.findOne({ where: { id: req.params.artistId }, include: [{ model: Artwork }] })
     if (foundArtist) {
@@ -51,7 +47,6 @@ router.get('/:artistId', async (req, res) => {
 
 
 router.put('/:artistId', async (req, res) => {
-  console.log('Req Body in PUT: ', req.body)
   try {
     await Artist.update(req.body, { where: { id: req.params.artistId } });
     const updatedArtist = await Artist.findOne({ where: { id: req.params.artistId } })
