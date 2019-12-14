@@ -17,7 +17,9 @@ class Carousel extends React.Component {
         <div className="artistName">{this.props.artistName}</div>
         <div style={{ "maxWidth": "95%", "margin": "0 auto" }}>
           <ItemsCarousel
-            requestToChangeActive={index => this.setState({ activeItemIndex: index + 1 })}
+            requestToChangeActive={index => {
+              this.setState({ activeItemIndex: index })
+            }}
             enablePlaceholder={true}
             activeItemIndex={this.state.activeItemIndex}
             numberOfCards={7}
@@ -26,6 +28,10 @@ class Carousel extends React.Component {
             rightChevron={<button className="chevron">{'>'}</button>}
             outsideChevron
             chevronWidth={40}
+            classes={{
+              leftChevronWrapper: "leftChevronWrapper",
+              rightChevronWrapper:"rightChevronWrapper"
+            }}
           >
             {this.props.list.map((work) => {
               return (

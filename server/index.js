@@ -3,7 +3,7 @@ const express = require('express');
 const { Artist, Artwork, db } = require('./models');
 const routes = require('./routes');
 
-const port = 3002;
+const port = 3500;
 
 const app = express();
 
