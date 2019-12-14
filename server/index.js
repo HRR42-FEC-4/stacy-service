@@ -1,15 +1,14 @@
+const cors = require("cors");
 const express = require('express');
 const { Artist, Artwork, db } = require('./models');
 const routes = require('./routes');
 
-const port = 3000;
+const port = 3500;
 
 const app = express();
-app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.send({message: 'This section to be updated'});
-});
+app.use(cors());
+app.use(express.json());
 
 app.use('/', routes);
 
