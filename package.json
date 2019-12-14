@@ -1,7 +1,7 @@
 {
   "name": "stacy-service",
   "version": "",
-  "description": "Hack Reactor | Front End Capstone Project | Art.com",
+  "description": "Front End Capstone Project | Art.com",
   "main": "index.js",
   "author": "Stacy Kim",
   "license": "UNLICENSED",
@@ -10,26 +10,35 @@
   },
   "scripts": {
     "start": "nodemon server",
-    "build": "webpack -d --watch",
+    "dev": "webpack-dev-server",
+    "build": "webpack",
     "seed": "node server/seed.js",
     "test": "jest --detectOpenHandles --forceExit"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.7.4",
     "aws-sdk": "^2.585.0",
     "axios": "^0.19.0",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "lodash": "^4.17.15",
     "mysql2": "^2.0.1",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-items-carousel": "^2.8.0",
     "sequelize": "^5.21.2",
-    "sequelize-cli": "^5.5.1"
+    "sequelize-cli": "^5.5.1",
+    "style-loader": "^1.0.1",
+    "styled-components": "^4.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "babel-loader": "^8.0.6",
+    "babel-plugin-styled-components": "^1.10.6",
+    "css-loader": "^3.3.2",
     "enzyme": "^3.10.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
@@ -39,8 +48,10 @@
     "eslint-plugin-react-hooks": "^1.7.0",
     "jest": "^24.9.0",
     "nodemon": "^2.0.1",
+    "react-motion": "^0.5.2",
     "supertest": "^4.0.2",
     "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
   }
 }

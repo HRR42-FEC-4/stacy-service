@@ -1,0 +1,57 @@
+.card {
+  height: auto;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+  cursor: pointer;
+
+  font-family: calibri, sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.6px;
+  color: #082a4c;
+}
+
+.imageContainer {
+  height:175;
+  width: auto;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: #FBFBFB;
+}
+
+.imageContainer:hover {
+  border: 1px solid #DEDDDF;
+}
+
+.image {
+  max-width: 135px;
+  box-sizing: border-box;
+}
+
+.artistName {
+  padding-top: 2.5%;
+  padding-left: 2.5%;
+  margin-bottom: 25px;
+  font-family: calibri, sans-serif;
+  font-size: 22px;
+  font-weight: 100;
+  color: #1b1a1a;
+}
+
+.chevron {
+  padding: 15px;
+  border-radius: 50%;
+  border: 1px solid #77899E;
+  background-color: #e6e6e6;
+  color: #77899E;
+}
+
+.chevron:hover {
+  opacity: 0.1;
+}

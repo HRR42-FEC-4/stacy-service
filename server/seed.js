@@ -47,7 +47,7 @@ db.authenticate()
           const rand = Math.floor(Math.random() * (MAX_ARTWORKS - MIN_ARTWORKS + 1) + MIN_ARTWORKS);
           return Array.from(Array(rand).keys()).map(() => {
             return new Promise(async (resolve, reject) => {
-              const res = await axios.get('https://source.unsplash.com/random/400x400/?wallpapers', { responseType: 'stream' });
+              const res = await axios.get('https://source.unsplash.com/random/500x400/?flowers,fields,tulips', { responseType: 'stream' });
               const Key = new Date().getTime() + '.jpg';
               const params = {
                 ACL: 'public-read', Bucket, Key, Body: res.data,
@@ -60,7 +60,7 @@ db.authenticate()
                   reject(err);
                 } else {
                   console.log('Successfully uploaded image');
-                  await Artwork.create({ title: faker.random.words(), imgUrl: `https://hartcom.s3.amazonaws.com/${Key}`, artistId: i + 1 });
+                  await Artwork.create({ title: faker.commerce.productName(), imgUrl: `https://hartcom.s3.amazonaws.com/${Key}`, artistId: i + 1 });
                   resolve();
                 }
               });
