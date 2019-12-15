@@ -2,8 +2,9 @@ const cors = require("cors");
 const express = require('express');
 const { Artist, Artwork, db } = require('./models');
 const routes = require('./routes');
+const path = require('path')
 
-const port = 3500;
+const port = 3002;
 
 const app = express();
 
@@ -11,6 +12,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/', routes);
+
+app.use('/', express.static('./public'));
 
 ( async () => {
   try {

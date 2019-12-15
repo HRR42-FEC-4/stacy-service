@@ -24,11 +24,11 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       }
     ]
-  },
-  devServer: {
-    publicPath: "/",
-    contentBase: "./public",
-    hot: true,
-    port: 3002
-  },
+  }
+  // devServer: {
+  //   publicPath: "/",
+  //   contentBase: "./public",
+  //   hot: true,
+  //   port: 3002
+  // },
 };
