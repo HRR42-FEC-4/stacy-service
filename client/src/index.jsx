@@ -17,7 +17,7 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3500/artists/8")
+    fetch("http://localhost:3002/artists/8")
       .then(response => response.json())
       .then(responseData => {
         this.setState({
