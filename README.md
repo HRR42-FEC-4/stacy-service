@@ -1,24 +1,26 @@
-# H-Art
-
-> Project description
-
-## Related Projects
-
-  - https://github.com/HRR42-FEC-4/stacy-proxy
-  - https://github.com/HRR42-FEC-4/dave-proxy
-  - https://github.com/HRR42-FEC-4/dave-service
-  - https://github.com/HRR42-FEC-4/katie-proxy
-  - https://github.com/HRR42-FEC-4/katie-service
+<h1 align="center"> Aureus </h1>
+<p align="center">
+  Ecommerce web application for contemporary and modern fine art collections
+</p>
 
 ## Table of Contents
 
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
+- [Overview](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#Usage)
+- [Requirements](#requirements)
+- [Development](#development)
+- [Related Projects](#related-projects)
+- [Team Members](#team-members)
+
+## Overview
+
+## Features
+
+## Installation
 
 ## Usage
-
-> Usage instructions
 
 ## Requirements
 
@@ -35,7 +37,19 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 From within the root directory:
 
 ```sh
-npm install webpack
 npm install
 ```
 
+## Related Projects
+
+- [stacy-proxy](https://github.com/HRR42-FEC-4/stacy-proxy)
+- [dave-proxy](https://github.com/HRR42-FEC-4/dave-proxy)
+- [dave-service](https://github.com/HRR42-FEC-4/dave-service)
+- [katie-proxy](https://github.com/HRR42-FEC-4/katie-proxy)
+- [katie-service](https://github.com/HRR42-FEC-4/katie-service)
+
+## Team Members
+
+- [David Clay](https://github.com/dclay1983)
+- [Kathleen Trainor](https://github.com/kathleen29)
+- [Stacy Kim](https://github.com/kimstacy)
